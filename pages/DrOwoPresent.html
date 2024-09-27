@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial;
+        color: white;
+      }
+
+      .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .left {
+        left: 0;
+        background-color: #111;
+      }
+
+      .right {
+        right: 0;
+        background-color: red;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .centered img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      /*  accordion  */
+      .accordion {
+        background-color: #eee;
+        /*   color: #444; */
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+        color: black;
+        transition: 0.4s;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="card">
+        <img
+          src="../img/DrAbdulhameedPicture.jpg"
+          alt="DrAbdulhameedPicture"
+          style="width: 100%"
+        />
+        <h1>Dr. Owolabi Abdulhameed</h1>
+        <p class="title">Research Professor</p>
+        <p>
+          Regional Leading Research Center for Smart Energy System, Kyungpook
+          National University, South Korea.
+        </p>
+        <div style="margin: 24px 0">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/mwlite/in/abdulhameed-owolabi-ph-d-0a688a134"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/dabestpumpin"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+      <button class="accordion active">In Brief</button>
+      <div class="panel">
+        <p>
+          A motivated clean energy analyst that has a passion for the
+          decarbonization of energy systems through the use of renewable energy
+          technologies and energy efficiency measures for the sustainable
+          development of cities across the globe. Also a building energy
+          specialist that has a passion for building energy performance through
+          the use of renewable energy technologies and energy efficiency
+          measures to enhance the consumption of less water, minimize waste
+          production, increase energy efficiency, and create a healthy living
+          for the sustainable development of the eco-systems.
+        </p>
+      </div>
+      <!-- 
+    <button class="accordion">Education Background</button>
+    <div class="panel">
+      <p>Bachelor (BEng) and Masters (MEng) degrees in Electrical Engineering both from the Federal University of Technology, Minna Nigeria in 2006 and 2012 respectively. He obtained a Ph.D. degree in renewable energy specialization, under the Bright Spark Scholarship of the University of Malaya, Malaysia in 2016. He is also a recipient of the Commonwealth Rutherford Fellowship- a prestigious fellowship funded by the UK Department for Business, Energy and Industrial Strategy (BEIS) through the Commonwealth Scholarship Commission in the United Kingdom.</p>
+    </div> -->
+
+      <button class="accordion">Affiliations</button>
+      <div class="panel">
+        <p>
+          Presently working as a Research Professor under the Regional Leading
+          Research Center for Smart Energy System, Kyungpook National University
+          South Korea where he manages, coordinate, and execute numerous
+          projects on the energy markets stability of developing nations through
+          the assessment of the techno-economic and environmental sustainability
+          of renewable energy projects that have led to the sustainable
+          development of cities within the globe to include the risk and
+          sensitivity analysis of energy systems using RETScreen Expert software
+          developed by the Natural Resource Canada (NRCan). He is also working
+          as a Senior Research Fellow with the Center for Climate Change and
+          Development, Alex-Ekwueme Federal University Ndufu-Alike (AEFUNAI)
+          Nigeria on the Nigeria Deep Decarbonization Pathways Project (DPP).
+        </p>
+      </div>
+
+      <button class="accordion">Achievement</button>
+      <div class="panel">
+        <p>
+          One of the 120 researchers from 18 nations across the globe working in
+          collaboration with Lawrence Berkeley National Laboratory (Berkeley
+          Lab), United State of America (USA) on Cool Building Solutions for a
+          Warming World (CBS) with the mission to identify, assess, develop, and
+          share passive and low-energy building energy efficiency measures that
+          help individuals and cities adapt to extreme heat.
+        </p>
+      </div>
+
+      <button class="accordion">Area Interest</button>
+      <div class="panel">
+        <p>
+          Area of expertise at RLRC also revolves around analyzing building
+          energy performance to include building energy audit, building energy
+          savings, building energy management, and energy assessment of
+          retrofitting buildings using RETScreen Expert software to track and
+          monitor energy and water use in residential buildings leading to over
+          25 percent savings in water and energy consumption in Korea and
+          Australia.
+        </p>
+      </div>
+
+      <button class="accordion">Funded Projects</button>
+      <div class="panel">
+        <p>
+          Specialized in assessing, analyzing, and developing renewable energy
+          and energy efficiency projects in developed and developing countries.
+          He has worked on clean energy projects funded by the United Nations
+          (UN), Global Green Growth Institute (GGGI), African Development Bank
+          (AfDB), Korean Energy Agency (KEA), Korean Energy Technology
+          Evaluation and Planning (KETEP), Natural Resource Canada (NRCan), and
+          the Canadian Energy Ventures (CEV) International. His experiences on
+          clean energy projects cut across North America (Canada, USA), Africa
+          (Nigeria, Cameroon, Togo, and Ivory Coast), Australia, and Asia (South
+          Korea) continents.
+        </p>
+      </div>
+
+      <button class="accordion">Other Projects</button>
+      <div class="panel">
+        <p>
+          Also working as a Green Building Consultant with the Global Green
+          Growth Institute (GGGI) with the responsibility to model the energy
+          performance of refortified residential buildings using the Measurement
+          and Verification (M&V) analysis developed by the Efficiency Valuation
+          Organization (EVO) after building retrofits leading to energy savings
+          and reduction of greenhouse gases emission of energy systems and
+          facilities.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
